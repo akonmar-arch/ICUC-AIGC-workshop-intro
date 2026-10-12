@@ -30,12 +30,13 @@ html{scroll-padding-top:76px}body{margin:0}button{cursor:pointer}a:focus-visible
 
 .attendance-entry{grid-column:1/-1;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;border:1px solid var(--hair-lime);padding:32px;margin-bottom:12px}.attendance-entry h3{font-size:32px;margin-bottom:16px}.attendance-entry p{font-size:14px;line-height:1.8;color:var(--mut);max-width:620px}.attendance-actions{display:flex;align-items:center;align-content:center;flex-wrap:wrap;gap:20px}.attendance-actions>.u-link{font-size:14px;color:var(--lime)}.attendance-actions small{display:block;flex-basis:100%;font-size:12px;line-height:1.8;color:var(--mut)}@media(max-width:767px){.attendance-entry{grid-template-columns:1fr;padding:24px;gap:24px}.attendance-entry h3{font-size:28px}}
 
-/* Final course section: preserve the supplied QR image at its native aspect ratio. */
-.class-group-section{min-height:calc(100svh - 56px);display:grid;place-items:center;border-top:1px solid var(--hair);padding-block:96px}
-.class-group-content{width:100%;text-align:center}
-.class-group-title{font-size:clamp(36px,5.5vw,72px);line-height:1.18;letter-spacing:-.04em;margin-bottom:36px}
+/* Final course section: left-aligned copy with a screen-height QR image. */
+.class-group-section{min-height:calc(100svh - 76px);padding:12px 3vw;border-top:1px solid var(--hair);background:#1a1a1a;display:grid;align-items:center}
+.class-group-content{display:grid;grid-template-columns:minmax(260px,.85fr) minmax(0,1.3fr);align-items:center;gap:3vw;width:100%;text-align:left}
+.class-group-copy{min-width:0}
+.class-group-title{font-size:clamp(40px,4.8vw,76px);line-height:1.18;letter-spacing:-.04em;margin:0}
 .class-group-title>span{display:block;color:var(--lime)}
-.class-group-qr{width:min(100%,359px);margin:0 auto}
-.class-group-qr img{display:block;width:100%;max-width:327px;height:auto;margin:0 auto;background:#1a1a1a;box-sizing:content-box;outline:16px solid #1a1a1a}
-.class-group-qr figcaption{margin-top:36px;font-size:13px;line-height:1.8;color:var(--mut)}
-@media(max-width:767px){.class-group-section{padding-block:80px}.class-group-title{margin-bottom:36px}.class-group-qr{width:min(100% - 32px,327px)}}
+.class-group-instruction{font-size:14px;line-height:1.8;color:var(--mut);margin-top:32px}
+.class-group-qr{width:100%;height:calc(100svh - 100px);margin:0;min-width:0}
+.class-group-qr img{display:block;width:100%;height:100%;object-fit:contain;image-rendering:pixelated}
+@media(max-width:767px){.class-group-section{padding:48px 16px 24px;min-height:calc(100svh - 76px)}.class-group-content{grid-template-columns:1fr;gap:28px}.class-group-copy{padding:0 8px}.class-group-title{font-size:clamp(32px,9vw,56px)}.class-group-instruction{margin-top:20px;font-size:13px}.class-group-qr{width:100vw;height:auto;aspect-ratio:327/313;margin-inline:-16px}.class-group-qr img{height:auto}}
