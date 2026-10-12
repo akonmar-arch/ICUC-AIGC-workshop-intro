@@ -38,5 +38,5 @@ html{scroll-padding-top:76px}body{margin:0}button{cursor:pointer}a:focus-visible
 .class-group-title>span{display:block;color:var(--lime)}
 .class-group-instruction{font-size:14px;line-height:1.8;color:var(--mut);margin-top:32px}
 .class-group-qr{width:100%;height:calc(100svh - 100px);margin:0;min-width:0}
-.class-group-qr img{display:block;width:100%;height:100%;object-fit:contain;image-rendering:pixelated}
+.class-group-qr img{display:block;width:100%;height:100%;object-fit:contain;image-rendering:pixelated;transform:scale(.5);transform-origin:center}
 @media(max-width:767px){.class-group-section{padding:48px 16px 24px;min-height:calc(100svh - 76px)}.class-group-content{grid-template-columns:1fr;gap:28px}.class-group-copy{padding:0 8px}.class-group-title{font-size:clamp(32px,9vw,56px)}.class-group-instruction{margin-top:20px;font-size:13px}.class-group-qr{width:100vw;height:auto;aspect-ratio:327/313;margin-inline:-16px}.class-group-qr img{height:auto}}
