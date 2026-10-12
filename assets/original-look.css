@@ -30,6 +30,9 @@ html{scroll-padding-top:76px}body{margin:0}button{cursor:pointer}a:focus-visible
 
 .attendance-entry{grid-column:1/-1;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;border:1px solid var(--hair-lime);padding:32px;margin-bottom:12px}.attendance-entry h3{font-size:32px;margin-bottom:16px}.attendance-entry p{font-size:14px;line-height:1.8;color:var(--mut);max-width:620px}.attendance-actions{display:flex;align-items:center;align-content:center;flex-wrap:wrap;gap:20px}.attendance-actions>.u-link{font-size:14px;color:var(--lime)}.attendance-actions small{display:block;flex-basis:100%;font-size:12px;line-height:1.8;color:var(--mut)}@media(max-width:767px){.attendance-entry{grid-template-columns:1fr;padding:24px;gap:24px}.attendance-entry h3{font-size:28px}}
 
+.mini-item strong{display:block;color:var(--paper);font-weight:600;margin-bottom:8px}
+#mini-assignments{scroll-margin-top:88px}
+
 /* Final course section: left-aligned copy with a screen-height QR image. */
 .class-group-section{min-height:calc(100svh - 76px);padding:12px 3vw;border-top:1px solid var(--hair);background:#1a1a1a;display:grid;align-items:center}
 .class-group-content{display:grid;grid-template-columns:minmax(260px,.85fr) minmax(0,1.3fr);align-items:center;gap:3vw;width:100%;text-align:left}
